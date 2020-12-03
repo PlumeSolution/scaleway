@@ -1,21 +1,13 @@
 language: php
 
 php:
-  - 5.4
-  - 5.5
-  - 5.6
-  - 7.0
-  - hhvm
+  - 7.3
+  - 7.4
+  - 8.0
 
 matrix:
   allow_failures:
-    - php: 7.0
-  include:
-    - php: 5.4
-      env:
-        - COMPOSER_FLAGS="--prefer-stable --prefer-lowest"
-        - PHPSPEC_FLAGS="-c phpspec.yml.ci"
-        - COVERAGE=true
+    - php: 8.0
 
 install:
   - travis_retry composer self-update

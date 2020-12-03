@@ -17,13 +17,13 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
-        "egeloen/http-adapter": "dev-fix-composer-json as 0.7.*@dev"
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^7.2"
     },
     "require-dev": {
-        "phpspec/phpspec": "~2.1",
-        "henrikbjorn/phpspec-code-coverage" : "~1.0",
-        "ciaranmcnulty/phpspec-typehintedmethods": "~1.1"
+        "phpspec/phpspec": "^7.0",
+        "phpunit/phpunit": "^8.5.5 || ^9.3.5",
+        "squizlabs/php_codesniffer": "^3.4"
     },
     "autoload": {
         "psr-4": {
@@ -41,5 +41,5 @@
         }
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
